@@ -1,0 +1,112 @@
+  
+ else{
+            //System.out.println("\nCredit card hasn't been used!!");
+	    System.out.println("\nNo Due Remaining");	
+        }
+    }
+   /* {
+        if(creditAmount==0)
+        {
+            System.out.println("\nCan not Pay credit,Your Balance is 0\n");
+        }
+        else
+        {
+            double amount;
+            System.out.println("Enter amount : ");
+            while(true)
+            {
+                amount = Double.parseDouble(br.readLine());
+                if(amount>=0)
+                {
+                    if(amount > creditAmount)
+                    {
+                        System.out.println("\n Amount is more than credit Amount!!");
+                        System.out.println("\n Enter Valid Credit Amount : ");
+
+                    }
+                    else
+                    {
+                        creditAmount = creditAmount - amount;
+                        System.out.println("Paid Successfully !!!");
+                        viewCreditAmount();
+                        break;
+                    }
+                }
+                else
+                {
+                    System.out.println("Amount cannot be less than Zero");
+                    System.out.println("Enter amount : ");
+                }
+            }
+        }
+    }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* {
+        Double payAmt;
+        if(creditAmount!=creditLimit)
+        {
+
+            System.out.println("Enter the Amount for increasing creditAmount : ");
+            while(true)
+            {
+                payAmt = Double.parseDouble(br.readLine());
+                if(payAmt>0)
+                {
+                    if((payAmt+creditAmount)<=creditLimit)
+                    {
+                        creditAmount = creditAmount + payAmt;
+                        System.out.println("Used Successful");
+                        viewCreditAmount();
+                        break;
+                    }
+                    else
+                    {
+                        System.out.println("Exceeding Credit Limit !!");
+                        System.out.println("\n Enter Valid Paying Amount : ");
+                    }
+
+                }
+                else
+                {
+                    System.out.println("Amount need to be positive");
+                    System.out.println("Enter amount : ");
+                }
+
+            }
+        }
+        else{
+            System.out.println("\nCredit limit has reached !!");
+        }
+    }*/
+}
+
+class GoldCardCustomer  extends SilverCardCustomer
+{
+    public int cnt;
+    double amount;
+
+    GoldCardCustomer()
+    {
+        creditLimit=100000;
+        creditAmount=0;
+	creditAmount=creditLimit;
+    }
+
